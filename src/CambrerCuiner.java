@@ -6,7 +6,7 @@
 
 /**
  *
- * @author xavier
+ * @author xavier Desembre 2017
  */
 import java.util.Date;
  
