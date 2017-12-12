@@ -47,7 +47,8 @@ class Cuiner implements Runnable {
             ordreComanda.setPlat("Llenties "+ordreComanda.countComada);
             ordreComanda.countComada = ordreComanda.countComada- 1;
             Thread.sleep(4000);
-            System.out.println("Cuiner té la comanda i comença a fer la comanda de "+ordreComanda.getPlat()+" a data: " + new Date());
+            System.out.println("Cuiner té la comanda i comença a fer la comanda de "+ordreComanda.getPlat()+" a data: " 
+                               + new Date());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -81,7 +82,8 @@ class Cambrer implements Runnable {
             }
             ordreComanda.countComada += 1;
             ordreComanda.setPlat("Llenties "+ordreComanda.countComada);
-            System.out.println("Cambrer anota comanda i ho notifica al cuiner "+ordreComanda.getPlat()+" a data " + new Date()+ " i notifica al cuiner.");
+            System.out.println("Cambrer anota comanda i ho notifica al cuiner "+ordreComanda.getPlat()+" a data " 
+                               + new Date()+ " i notifica al cuiner.");
             ordreComanda.notifyAll();
         }
     }
